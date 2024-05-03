@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <link rel="icon" href="./images/BookHavenHublogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="Add to Cart.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/BookHavenHub.png" alt="BookHavenHub.com Logo">
+        </div>
+        <h1>BookHavenHub.com - Your Bookstore</h1>
+        <div class="Login">
+            <button type="button"><a href="./Login.html" target="_self" aria-label="Log In">Log In</a></button>
+            <button type="button"><a href="./Login.html" target="_self" aria-label="Sign up">Sign up</a></button>
+        </div>
+    </header>
+    <div class="list">
+        <ul class="navbar">
+            <li><a class="navitem" href="./index.css">Home</a></li>
+            <li><a class="navitem" href="./Book_Store.html">Books</a></li>
+            <li><a class="navitem" href="Catalogue.html">About Us</a></li>
+            <li><a class="navitem" href="#Contact.html">Contact Us</a></li>
+            <li class="navitem cart-icon" style="float:right;">
+                <a class="active" href="./Add to Cart.html">
+                    <img src="./images/add-to-cart.png" width="20px" alt="Add_to_cart"></a>
+                <span class="cart-count">3</span>
+                <!-- You can update this number dynamically based on the cart contents -->
+                </a>
+            </li>
+            <li class="navitem search-bar" style="float:right;">
+                <input type="text" placeholder="Search">
+                <button type="button"> Search </button>
+            </li>
+        </ul>
+    </div>
+    <p class='legend1'>----------Shopping Cart----------</p>
+    <div class="Small-container cart-page">
+        <main>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img class="image-with-border" height="210px" width="150"
+                                src="https://m.media-amazon.com/images/I/718lrBB7f3L._SY425_.jpg"
+                                alt="Great Mythology Book">
+                            <div>
+                                <p><b>Book Title:</b> Srimad Bhagavad Gita Yatharoop</p>
+                                <p><b>Author:</b> Maharishi Veda Vyasa</p>
+                                <br>
+                                <Small>Price: $100.00</Small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" placeholder="Quantity"></td>
+                    <td>$100.00</td>
+                    <td><button class="Action">BUY NOW</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img class="image-with-border" height="210px" width="150"
+                                src="https://m.media-amazon.com/images/I/814L+vq01mL._SL1500_.jpg"
+                                alt="Great Mythology Book">
+                            <div>
+                                <p><b>Book Title:</b> Ikigai</p>
+                                <p><b>Author:</b> Francesc Miralles</p>
+                                <br>
+                                <Small>Price: $50.00</Small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="2" placeholder="Quantity"></td>
+                    <td>$100.00</td>
+                    <td><button class="Action">BUY NOW</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img class="image-with-border" height="210px" width="150"
+                                src="https://m.media-amazon.com/images/I/71k7V0QvcdL._SY425_.jpg"
+                                alt="Great Mythology Book">
+                            <div>
+                                <p><b>Book Title:</b> THE COURAGE TO BE DISLIKED</p>
+                                <p><b>Author:</b> ICHIRO KISHIMI</p>
+                                <br>
+                                <Small>Price: $70.00</Small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" placeholder="Quantity"></td>
+                    <td>$70.00</td>
+                    <td><button class="Action">BUY NOW</button></td>
+                </tr>
+            </table>
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$270.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>$30.00</td>
+                    </tr>
+                    <tr>
+                        <td><b>Total</b></td>
+                        <td><b>$300.00</b></td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <div class="checkout-button">
+            <button id="checkout-btn" value="Checkout">Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            <img src="./images/BookHavenHub.png" alt="BookHavenHub.com Logo">
+        </div>
+    </footer>
+</body>
+
+</html>
